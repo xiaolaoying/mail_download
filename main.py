@@ -55,5 +55,4 @@ for emailid in items:
             filepath = os.path.join(attachment_dir, filename)
             with open(filepath, "wb") as f:
                 f.write(part.get_payload(decode=True))
-
-    print('Attachment saved at: ' + filepath)
+            print('Attachment saved at: ' + filepath)
